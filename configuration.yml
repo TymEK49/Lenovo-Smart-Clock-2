@@ -1,0 +1,23 @@
+   light:
+  - platform: template
+    lights:
+      lenovo_smart_clock2_light:
+        friendly_name: "Lenovo Smart Clock2 Light"
+        turn_on:
+          service: androidtv.adb_command
+          target:
+            entity_id: media_player.lenovo_smart_clock2
+          data:
+            command: "service call charge_base 7 i64 7"
+        turn_off:
+          service: androidtv.adb_command
+          target:
+            entity_id: media_player.lenovo_smart_clock2
+          data:
+            command: "service call charge_base 7 i64 0"
+        set_level:
+          service: androidtv.adb_command
+          target:
+            entity_id: media_player.lenovo_smart_clock2
+          data:
+            command: "service call charge_base 7 i64 {{ (brightness / 255) * 10 | round(0) | int }}"
