@@ -3,7 +3,7 @@
 
 1. Root your clock, install Magisk and wireless ADB following tutorial https://github.com/ThomasPrior/LenovoSmartClock2?tab=readme-ov-file#enable-wireless-adb
 2. In HA install Android Debug Bridge integration https://www.home-assistant.io/integrations/androidtv/ and enter your IP address, port (default is 5555 or 1234) and select androidtv.
-3. Add your device in configuration.yaml
+3. Add your device in configuration.yaml like in my [example](https://github.com/TymEK49/Lenovo-Smart-Clock-2/blob/main/configuration.yml)
   
 5. Enjoy
 
