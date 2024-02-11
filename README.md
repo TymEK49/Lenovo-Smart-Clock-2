@@ -1,0 +1,1 @@
+# Lenovo-Smart-Clock-2
